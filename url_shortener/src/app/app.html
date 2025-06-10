@@ -1,0 +1,12 @@
+<div class="h-screen bg-zinc-50 font-semibold text-;lg flex flex-col items-center justify-center">
+  <h1>
+    URL SHORTENER
+  </h1>
+  <img src="/logo.png" class="w-22 h-22"alt="Logo"/>
+  
+    <label for="urlInput">ENTER URL TO SHORTEN:</label>
+    <input [(ngModel)]="url" class="m-2 p-2 border-solid-black "type="text" id="urlInput"/>
+    <button (click)="getUrl()" class="bg-black text-zinc-50 p-2 " id="shortenerButton" type="submit">SHORTEN</button>
+
+  <p>SHORTENED URL: {{key}}</p>
+</div>
