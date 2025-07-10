@@ -34,5 +34,8 @@ ng_serve
 | POST   | /createKey | Creates a short key and stores it   | `url: string` (body) | JSON       |
 | GET    | /{key}     | Redirects to the original long URL  | `key: string` (path) | Redirect   |
 
+## Images
+<img width="568" height="480" alt="image" src="https://github.com/user-attachments/assets/70f79b31-7b0a-4d1d-9e35-85b2b9364055" />
+
 ## License
 Licensed under MIT license
