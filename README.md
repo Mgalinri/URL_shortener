@@ -10,6 +10,29 @@ This is a personal project to allow me to better understand the MEAN stack, repl
 - MySQL
 
 ## Getting Started
+> Make sure node.js and mysql is installed in your system
+Backend
+```
+clone https://github.com/Mgalinri/URL_shortener.git
+cd backend
+npm install
+node index.ts
+```
+Frontend
+```
+cd url_shortener
+npm install
+ng_serve
+```
+## Features
+1. Maps URLs to a key and generates shortened links
+2. A simple UI
 
+## API Endpoints (Backend)
+| Method | Endpoint   | Description                         | Parameters           | Response   |
+|--------|------------|-------------------------------------|----------------------|------------|
+| POST   | /createKey | Creates a short key and stores it   | `url: string` (body) | JSON       |
+| GET    | /{key}     | Redirects to the original long URL  | `key: string` (path) | Redirect   |
 
-## API Endpoints
+## License
+Licensed under MIT license
